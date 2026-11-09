@@ -1,0 +1,42 @@
+# AI_LOG.md
+
+## 1. AI Tools Used
+
+**Tool:** OpenAI ChatGPT
+
+**Scope of assistance:**
+- Understanding M4 requirements and the CR-1 change request.
+- Assisting with CMake configuration, Docker commands, and Git submission procedures.
+- Reviewing and organizing design documentation.
+
+## 2. Components Receiving AI Assistance
+
+**IPC Server (`ipc_server.cpp`, `ipc_server.hpp`)**
+- Reviewed Unix-domain socket setup, `poll()`, file-path validation, and message serialization.
+
+**IPC Client (`aiws_send.cpp`)**
+- Reviewed socket connection handling, message transfer, timeout handling, and response processing.
+
+**Build Configuration and Documentation**
+- Assisted with adding source files and executables to `CMakeLists.txt`.
+- Explained Docker build commands and Git submission procedures.
+- Helped revise `DESIGN.md`.
+
+## 3. Errors and Corrections
+
+During development and review, the following issues were identified:
+
+- Incorrect socket communication code involving `poll()` and event handling.
+- Missing or incorrect C++ declarations and syntax.
+- Inconsistent default socket paths between the client and server.
+- Missing IPC source files and client executable configuration in CMake.
+
+These issues were addressed through code revisions and additional review.
+
+## 4. Verification and Student Responsibility
+
+I reviewed the AI suggestions against my implementation and assignment requirements. I revised the code to address identified issues and examined the threading, IPC communication, and shutdown behavior.
+
+AI-assisted code review does not guarantee correctness. Full final-build and runtime verification had not been completed at the time of this log.
+
+I remain responsible for understanding, maintaining, and explaining the submitted implementation.
