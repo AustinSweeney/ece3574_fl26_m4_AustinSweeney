@@ -1,0 +1,55 @@
+commit 943709b6d540857634c2df6763d2aad0990001b9
+Author: Austin Sweeney <AustinSweeney126@vt.edu>
+Date:   2026-11-08 23:35:14 -0500
+
+    Complete M4 implementation
+
+ .gitignore                                         |   3 +
+ M4_Starter/.gitignore                              |   3 +
+ M4_Starter/CMakeLists.txt                          |  62 +++
+ M4_Starter/DESIGN.md                               |  82 ++++
+ M4_Starter/DESIGN_NOTE.md                          |   3 +
+ M4_Starter/STARTER_README.pdf                      | Bin 0 -> 39600 bytes
+ M4_Starter/data/public/doc_ai.txt                  |   3 +
+ M4_Starter/data/public/doc_retrieval.txt           |   3 +
+ M4_Starter/data/public/doc_systems.txt             |   3 +
+ M4_Starter/data/public/queries.txt                 |   4 +
+ M4_Starter/include/aiws/chunker.hpp                |  25 ++
+ M4_Starter/include/aiws/chunking_strategy.hpp      |  18 +
+ M4_Starter/include/aiws/context_builder.hpp        |  13 +
+ M4_Starter/include/aiws/context_strategy.hpp       |  17 +
+ M4_Starter/include/aiws/corpus_index.hpp           |  36 ++
+ M4_Starter/include/aiws/document.hpp               |  22 +
+ M4_Starter/include/aiws/gui/context_widget.hpp     |  75 ++++
+ M4_Starter/include/aiws/gui/main_window.hpp        | 204 +++++++++
+ M4_Starter/include/aiws/gui/resettable.hpp         |  22 +
+ .../include/aiws/gui/search_result_model.hpp       |  84 ++++
+ M4_Starter/include/aiws/gui/search_widget.hpp      | 105 +++++
+ .../include/aiws/gui/term_inspector_widget.hpp     |  81 ++++
+ M4_Starter/include/aiws/gui/workspace_widget.hpp   | 101 +++++
+ M4_Starter/include/aiws/ipc_server.hpp             |  32 ++
+ M4_Starter/include/aiws/processing_core.hpp        |  53 +++
+ M4_Starter/include/aiws/processing_types.hpp       |  38 ++
+ M4_Starter/include/aiws/retrieval_engine.hpp       |  18 +
+ M4_Starter/include/aiws/retrieval_strategy.hpp     |  20 +
+ M4_Starter/include/aiws/text_processor.hpp         |  29 ++
+ M4_Starter/include/aiws/workspace.hpp              |  19 +
+ M4_Starter/src/chunker.cpp                         |  59 +++
+ M4_Starter/src/context_builder.cpp                 |  29 ++
+ M4_Starter/src/context_widget.cpp                  |  84 ++++
+ M4_Starter/src/corpus_index.cpp                    |  72 ++++
+ M4_Starter/src/document.cpp                        |  14 +
+ M4_Starter/src/ipc_server.cpp                      | 221 ++++++++++
+ M4_Starter/src/main.cpp                            |  48 +++
+ M4_Starter/src/main_window.cpp                     | 471 +++++++++++++++++++++
+ M4_Starter/src/processing_core.cpp                 | 116 +++++
+ M4_Starter/src/retrieval_engine.cpp                |  86 ++++
+ M4_Starter/src/search_result_model.cpp             |  83 ++++
+ M4_Starter/src/search_widget.cpp                   | 134 ++++++
+ M4_Starter/src/term_inspector_widget.cpp           |  74 ++++
+ M4_Starter/src/text_processor.cpp                  | 116 +++++
+ M4_Starter/src/workspace.cpp                       |  17 +
+ M4_Starter/src/workspace_widget.cpp                |  88 ++++
+ M4_Starter/tests/student_tests.cpp                 |   2 +
+ M4_Starter/tools/aiws_send.cpp                     | 209 +++++++++
+ 48 files changed, 3101 insertions(+)
