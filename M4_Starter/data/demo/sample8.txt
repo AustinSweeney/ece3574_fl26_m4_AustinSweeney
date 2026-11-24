@@ -1,0 +1,4 @@
+Document 8
+Machine learning uses training data.
+Threads and mutexes protect shared state.
+Drones can use cameras for precision landing.

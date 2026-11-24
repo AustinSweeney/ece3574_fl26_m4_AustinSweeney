@@ -1,0 +1,26 @@
+Start testing: Nov 23 23:27 UTC
+----------------------------------------------------------
+1/1 Testing: student_tests
+1/1 Test: student_tests
+Command: "/mnt/build-m5/student_tests"
+Directory: /mnt/build-m5
+"student_tests" start time: Nov 23 23:27 UTC
+Output:
+----------------------------------------------------------
+********* Start testing of StudentTests *********
+Config: Using QtTest library 6.4.2, Qt 6.4.2 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.2.0), ubuntu 24.04
+PASS   : StudentTests::initTestCase()
+PASS   : StudentTests::workerBuildAndReset()
+PASS   : StudentTests::idleShutdown()
+PASS   : StudentTests::cleanupTestCase()
+Totals: 4 passed, 0 failed, 0 skipped, 0 blacklisted, 954ms
+********* Finished testing of StudentTests *********
+<end of output>
+Test time =   1.05 sec
+----------------------------------------------------------
+Test Passed.
+"student_tests" end time: Nov 23 23:27 UTC
+"student_tests" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: Nov 23 23:27 UTC

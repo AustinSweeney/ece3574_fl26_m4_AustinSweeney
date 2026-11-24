@@ -1,0 +1,4 @@
+Autonomous drones use sensors to navigate their environment.
+GPS provides position information for navigation.
+Computer vision can detect landing targets.
+Precision landing uses camera feedback to guide the drone.

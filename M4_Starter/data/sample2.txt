@@ -1,0 +1,4 @@
+Operating systems manage computer hardware and software.
+Threads allow multiple tasks to execute concurrently.
+Mutexes protect shared data from race conditions.
+Condition variables allow threads to wait for events.

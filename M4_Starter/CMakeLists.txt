@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(ai_workspace_m4 LANGUAGES CXX)
+project(ai_workspace_m5 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -34,6 +34,10 @@ add_library(aiws_app STATIC
     src/context_widget.cpp
     src/term_inspector_widget.cpp
     src/search_result_model.cpp
+    src/build_worker.cpp
+    src/corpus_state.cpp
+    include/aiws/gui/build_worker.hpp
+    include/aiws/gui/corpus_state.hpp
     src/ipc_server.cpp
     include/aiws/ipc_server.hpp
     include/aiws/gui/main_window.hpp
@@ -48,9 +52,9 @@ target_include_directories(aiws_app PUBLIC include)
 target_link_libraries(aiws_app PUBLIC aiws_m2 Qt6::Widgets)
 target_compile_options(aiws_app PRIVATE -Wall -Wextra -Wpedantic)
 
-add_executable(ai_workspace_m4 src/main.cpp)
-target_link_libraries(ai_workspace_m4 PRIVATE aiws_app)
-target_compile_options(ai_workspace_m4 PRIVATE -Wall -Wextra -Wpedantic)
+add_executable(ai_workspace_m5 src/main.cpp)
+target_link_libraries(ai_workspace_m5 PRIVATE aiws_app)
+target_compile_options(ai_workspace_m5 PRIVATE -Wall -Wextra -Wpedantic)
 add_executable(aiws_send tools/aiws_send.cpp)
 target_link_libraries(aiws_send PRIVATE Threads::Threads)
 target_compile_options(aiws_send PRIVATE -Wall -Wextra -Wpedantic)
