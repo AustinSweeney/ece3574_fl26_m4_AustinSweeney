@@ -1,3 +1,4 @@
-bb57953 (HEAD -> main, origin/main) added ai log
+﻿679a874 (HEAD -> main, origin/main) Correct HISTORY.txt filename capitalization
+bb57953 added ai log
 157bd00 Add HISTORY.txt
 943709b Complete M4 implementation
